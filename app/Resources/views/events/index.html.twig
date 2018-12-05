@@ -1,1 +1,9 @@
-<h1> Events </h1>
+<h1>{{ events|length }} Evénements</h1>
+
+{{ "now"|date('d/m/Y H:i:s') }}
+
+<uL>
+    {% for event in events %}
+        <li>{{ event }}</li>
+    {% endfor %}
+</ul>
